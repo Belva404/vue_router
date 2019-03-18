@@ -1,18 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div id="app">
+		<img alt="Vue logo" src="./assets/logo.png">
+		<br>
+		<router-link to="/kelas">Data Kelas</router-link>&nbsp;
+		<router-link to="/siswa">Data Siswa</router-link>
+		<br>
+		<router-link to="/kelas/tambah">Tambah Data Kelas</router-link>&nbsp;
+		<router-link to="/siswa/tambah">Tambah Data Siswa</router-link>
+		<router-view/>
+	</div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+	name: 'App',
+	components: {
+		HelloWorld
+	}
 }
 </script>
 
